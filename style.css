@@ -1041,3 +1041,9 @@ footer {
   .footer-inner { flex-direction: column; text-align: center; }
   .certs-grid { grid-template-columns: 1fr; }
 }
+/* FIX LAST NAME STYLE */
+.hero-name-line.accent {
+  color: var(--gold);
+  -webkit-text-stroke: 0;
+  text-shadow: 0 0 20px rgba(201,168,76,0.3);
+}
