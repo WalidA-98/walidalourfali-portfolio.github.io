@@ -1047,3 +1047,43 @@ footer {
   -webkit-text-stroke: 0 !important;
   text-shadow: 0 0 20px rgba(201,168,76,0.3);
 }
+/* CERTIFICATIONS GRID */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* CERT CARD */
+.cert-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.cert-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(59,130,246,0.15);
+}
+
+/* TEXT STYLE */
+.cert-name {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* OPTIONAL: ADD SMALL LABEL STYLE */
+.cert-card::before {
+  content: "CERTIFICATE";
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
