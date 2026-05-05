@@ -274,8 +274,9 @@ nav.scrolled {
 }
 
 .hero-name-line.accent {
-  color: transparent;
-  -webkit-text-stroke: 2px var(--gold);
+  color: var(--gold);
+  -webkit-text-stroke: 0 !important;
+  text-shadow: 0 0 20px rgba(201,168,76,0.3);
 }
 
 .hero-meta {
