@@ -2,6 +2,7 @@
    CSS VARIABLES
    ============================================ */
 :root {
+ --gold: var(--accent);
   --bg: #0b0f1a;
   --bg2: #111827;
   --bg3: #1f2937;
@@ -83,7 +84,7 @@ section {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, transparent 70%);
   filter: blur(70px);
   pointer-events: none;
   z-index: 0;
@@ -124,7 +125,7 @@ section {
 
 .orb-3 {
   width: 400px; height: 400px;
-  background: rgba(201,168,76,0.08);
+  background: rgba(59,130,246,0.08);
   top: 50%; right: 10%;
   animation: orbFloat 20s ease-in-out infinite;
 }
@@ -642,7 +643,7 @@ nav.scrolled {
   font-size: 0.72rem;
   color: var(--gold);
   background: rgba(201,168,76,0.08);
-  border: 1px solid rgba(201,168,76,0.2);
+  border: 1px solid rgba(59,130,246,0.2);
   padding: 0.25rem 0.7rem;
   border-radius: 100px;
   white-space: nowrap;
@@ -689,7 +690,7 @@ nav.scrolled {
 .exp-tool {
   font-family: var(--font-mono);
   font-size: 0.68rem;
-  background: rgba(201,168,76,0.06);
+  background: rgba(59,130,246,0.06);
   border: 1px solid rgba(201,168,76,0.15);
   color: var(--gold);
   padding: 0.2rem 0.55rem;
@@ -731,7 +732,7 @@ nav.scrolled {
 }
 
 .project-card:hover {
-  border-color: rgba(201,168,76,0.4);
+  border-color: rgba(59,130,246,0.4);
   transform: translateY(-4px);
   box-shadow: 0 0 40px rgba(201,168,76,0.08);
 }
