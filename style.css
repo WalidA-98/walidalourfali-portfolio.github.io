@@ -1086,3 +1086,94 @@ footer {
   margin-bottom: 8px;
   letter-spacing: 1px;
 }
+
+/* ============================================
+   FINAL BLUE OVERRIDE (CLEAN + CONSISTENT)
+============================================ */
+
+/* Labels */
+.section-label,
+.nav-logo,
+.cert-issuer,
+.exp-company,
+.exp-period,
+.project-impact-label {
+  color: var(--accent) !important;
+}
+
+/* Dividers */
+.section-divider,
+.scroll-line,
+.project-card::before {
+  background: linear-gradient(90deg, var(--accent), transparent) !important;
+}
+
+/* Timeline */
+.timeline::before {
+  background: linear-gradient(to bottom, var(--accent), transparent) !important;
+}
+
+.timeline-item::before {
+  background: var(--accent) !important;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.2) !important;
+}
+
+/* Hover effects */
+.skill-card:hover,
+.project-card:hover,
+.cert-card:hover,
+.stat-card:hover {
+  border-color: rgba(59,130,246,0.4) !important;
+  box-shadow: 0 0 30px rgba(59,130,246,0.12) !important;
+}
+
+/* Buttons */
+.btn-outline {
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+}
+
+.btn-download {
+  border: 1px solid rgba(59,130,246,0.3) !important;
+  color: var(--accent) !important;
+}
+
+.btn-download:hover {
+  background: var(--accent) !important;
+  color: #fff !important;
+}
+
+/* Skill tags */
+.skill-tag {
+  background: rgba(59,130,246,0.06) !important;
+  border: 1px solid rgba(59,130,246,0.15) !important;
+  color: var(--accent) !important;
+}
+
+/* Project impact */
+.project-impact {
+  background: rgba(59,130,246,0.06) !important;
+  border: 1px solid rgba(59,130,246,0.15) !important;
+}
+
+/* Experience tools */
+.exp-tool {
+  background: rgba(59,130,246,0.06) !important;
+  border: 1px solid rgba(59,130,246,0.15) !important;
+  color: var(--accent) !important;
+}
+
+/* Remove gold blinking cursor */
+#typewriter::after {
+  color: var(--accent) !important;
+}
+
+/* Hero dot */
+.hero-dot {
+  background: var(--accent) !important;
+}
