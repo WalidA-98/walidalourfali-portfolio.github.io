@@ -277,9 +277,9 @@ nav.scrolled {
 }
 
 .hero-name-line.accent {
-  color: var(--gold);
+  color: var(--accent);
   -webkit-text-stroke: 0 !important;
-  text-shadow: 0 0 20px rgba(201,168,76,0.3);
+  text-shadow: 0 0 20px rgba(59,130,246,0.3);
 }
 
 .hero-meta {
@@ -355,13 +355,12 @@ nav.scrolled {
 }
 
 .btn-primary {
-  background: var(--gold);
-  color: var(--bg);
+  background: var(--accent);
+  color: white;
 }
 
 .btn-primary:hover {
-  background: var(--accent);
-  color: var(--bg);
+  background: var(--accent-light);
   opacity: 1;
   transform: translateY(-2px);
 }
@@ -1058,32 +1057,28 @@ footer {
   margin-top: 30px;
 }
 
-/* CERT CARD */
 .cert-card {
-  background: var(--bg-secondary);
+  background: var(--bg3);
   border: 1px solid var(--border);
   padding: 20px;
   border-radius: 12px;
   transition: 0.3s ease;
 }
 
-/* HOVER EFFECT */
 .cert-card:hover {
   border-color: var(--accent);
   transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(59,130,246,0.15);
+  box-shadow: 0 0 20px rgba(59,130,246,0.2);
 }
 
-/* TEXT STYLE */
 .cert-name {
   font-size: 14px;
   line-height: 1.5;
   color: var(--text);
 }
 
-/* OPTIONAL: ADD SMALL LABEL STYLE */
 .cert-card::before {
-  content: "CERTIFICATE";
+  content: "CERTIFICATION";
   display: block;
   font-size: 11px;
   color: var(--muted);
