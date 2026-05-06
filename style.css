@@ -1074,6 +1074,10 @@ footer {
   margin-bottom: 8px;
   letter-spacing: 1px;
 }
+
+.language-card::before {
+  content: "PROFICIENCY";
+}
 /* SCROLL REVEAL ANIMATION */
 .reveal {
   opacity: 0;
