@@ -93,17 +93,17 @@
     <div class="section-divider"></div>
 
     <div class="projects-grid">
-      <div class="project-card">
+      <div class="project-card reveal">
         <div class="project-title">High-Volume Support</div>
         <div class="project-desc">Handled large-scale customer interactions while maintaining SLA targets.</div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card reveal">
         <div class="project-title">Billing & Subscriptions</div>
         <div class="project-desc">Resolved complex billing issues including refunds, failed payments, and renewals.</div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card reveal">
         <div class="project-title">Technical Troubleshooting</div>
         <div class="project-desc">Diagnosed account access and system issues across multiple platforms.</div>
       </div>
@@ -121,7 +121,7 @@
     <div class="section-divider"></div>
 
     <div class="skills-grid">
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <div class="skill-card-header">Support Systems</div>
         <div class="skill-tags">
           <span class="skill-tag">Zendesk</span>
@@ -130,7 +130,7 @@
         </div>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <div class="skill-card-header">Technical</div>
         <div class="skill-tags">
           <span class="skill-tag">Troubleshooting</span>
@@ -139,7 +139,7 @@
         </div>
       </div>
 
-      <div class="skill-card">
+      <div class="skill-card reveal">
         <div class="skill-card-header">Operations</div>
         <div class="skill-tags">
           <span class="skill-tag">Escalations</span>
@@ -163,7 +163,7 @@
 
     <div class="timeline">
 
-      <div class="timeline-item">
+      <div class="timeline-item reveal">
         <div class="exp-role">Customer & Technical Support Specialist</div>
         <div class="exp-company">JIFU Travel</div>
         <span class="exp-period">2023 — 2026</span>
@@ -175,7 +175,7 @@
         </ul>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item reveal">
         <div class="exp-role">Content Moderator</div>
         <div class="exp-company">TaskUs</div>
         <span class="exp-period">2020 — 2023</span>
@@ -187,7 +187,7 @@
         </ul>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item reveal">
         <div class="exp-role">Technical Support</div>
         <div class="exp-company">Concentrix</div>
         <span class="exp-period">2019 — 2020</span>
@@ -198,7 +198,7 @@
           </ul>
       </div>
 
-      <div class="timeline-item">
+      <div class="timeline-item reveal">
         <div class="exp-role">Community Support (Part-Time)</div>
         <div class="exp-company">Modsquad</div>
         <span class="exp-period">2024 — Present</span>
@@ -222,14 +222,14 @@
     <div class="section-divider"></div>
 
     <div class="certs-grid">
-      <div class="cert-card">
+      <div class="cert-card reveal">
         Google Data Analytics Professional Certificate  
         <br><span style="color: var(--muted); font-size:12px;">
         Google / Coursera — 2024
         </span>
       </div>
 
-      <div class="cert-card"> 
+      <div class="cert-card reveal"> 
         Lean Six Sigma Black, Green, Yellow & White Belt
         <br><span style="color: var(--muted); font-size:12px;">
         Six Sigma Academy Amsterdam — 2023
@@ -250,11 +250,11 @@
     <div class="section-divider"></div>
 
     <div class="certs-grid">
-      <div class="cert-card">
+      <div class="cert-card reveal">
         <div class="cert-name">English - Fluent</div>
       </div>
 
-      <div class="cert-card">
+      <div class="cert-card reveal">
         <div class="cert-name">Arabic - Fluent</div>
       </div>
       
@@ -301,6 +301,25 @@ function type(){
 }
 type();
 </script>
+  
+<script>
+const reveals = document.querySelectorAll('.reveal');
 
+function revealOnScroll() {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  reveals.forEach((el) => {
+    const rect = el.getBoundingClientRect();
+
+    if (rect.top < triggerBottom) {
+      el.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+
+revealOnScroll();
+</script>
 </body>
 </html>
