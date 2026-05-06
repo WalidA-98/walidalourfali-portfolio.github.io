@@ -471,30 +471,16 @@ nav.scrolled {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: start;
-}
-
-.about-right p {
-  color: var(--muted);
-  font-weight: 300;
-  margin-bottom: 1.2rem;
-  font-size: 1.02rem;
-}
-
-.about-right p strong {
-  color: var(--text);
-  font-weight: 500;
-}
-
-.about-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
   margin-top: 2rem;
 }
 
+.about-grid .skill-card p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
 .stat-card {
   background: var(--bg3);
   border: 1px solid var(--border);
