@@ -117,7 +117,7 @@ section {
 
 .orb-2 {
   width: 500px; height: 500px;
-  background: rgba(172,186,196,0.07);
+  background: rgba(96,165,250,0.07);
   bottom: 20%; left: -150px;
   animation: orbFloat 16s ease-in-out infinite reverse;
 }
@@ -141,7 +141,7 @@ section {
 .section-label {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: var(--gold);
+  color: var(--accent);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
@@ -163,7 +163,7 @@ section {
 .section-divider {
   width: 80px;
   height: 2px;
-  background: linear-gradient(90deg, var(--gold), transparent);
+  background: linear-gradient(90deg, var(--accent), transparent);
   margin-bottom: 3rem;
   border-radius: 2px;
 }
@@ -197,7 +197,7 @@ nav.scrolled {
 .nav-logo {
   font-family: var(--font-mono);
   font-size: 0.9rem;
-  color: var(--gold);
+  color: var(--accent);
   letter-spacing: 0.05em;
 }
 
@@ -252,7 +252,7 @@ nav.scrolled {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--accent);
   animation: pulse 2s ease infinite;
   flex-shrink: 0;
 }
@@ -299,7 +299,7 @@ nav.scrolled {
 
 #typewriter::after {
   content: '|';
-  color: var(--gold);
+  color: var(--accent);
   animation: blink 1s step-end infinite;
   margin-left: 2px;
 }
@@ -372,22 +372,22 @@ nav.scrolled {
 }
 
 .btn-outline:hover {
-  border-color: var(--gold);
-  color: var(--gold);
+  border-color: var(--accent);
+  color: varvar(--accent);
   opacity: 1;
   transform: translateY(-2px);
 }
 
 .btn-download {
   background: transparent;
-  color: var(--gold);
+  color: var(--accent);
   border: 1px solid rgba(201,168,76,0.3);
   font-family: var(--font-mono);
   font-size: 0.78rem;
 }
 
 .btn-download:hover {
-  background: var(--gold);
+  background: var(--accent);
   color: var(--bg);
   opacity: 1;
   transform: translateY(-2px);
@@ -419,7 +419,7 @@ nav.scrolled {
 .scroll-line {
   width: 1px;
   height: 60px;
-  background: linear-gradient(to bottom, var(--gold), transparent);
+  background: linear-gradient(to bottom, var(--accent), transparent);
   animation: scrollDown 1.8s ease infinite;
 }
 
@@ -457,7 +457,7 @@ nav.scrolled {
   white-space: nowrap;
 }
 
-.marquee-dot { color: var(--gold) !important; }
+.marquee-dot { color: var(--accent) !important; }
 
 @keyframes marquee {
   from { transform: translateX(0); }
@@ -513,7 +513,7 @@ nav.scrolled {
   font-family: var(--font-head);
   font-size: 2rem;
   font-weight: 800;
-  color: var(--gold);
+  color: var(--accent;
   line-height: 1.1;
   margin-bottom: 0.3rem;
 }
@@ -553,7 +553,7 @@ nav.scrolled {
   font-family: var(--font-head);
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--gold);
+  color: var(--accent);
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -568,8 +568,8 @@ nav.scrolled {
 .skill-tag {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  background: rgba(201,168,76,0.07);
-  border: 1px solid rgba(201,168,76,0.15);
+  background: rgba(59,130,246,0.07);
+  border: 1px solid rgba(59,130,246,0.15);
   color: var(--accent);
   padding: 0.3rem 0.7rem;
   border-radius: 6px;
@@ -593,7 +593,7 @@ nav.scrolled {
   top: 0.4rem;
   bottom: 0;
   width: 1px;
-  background: linear-gradient(to bottom, var(--gold), transparent);
+  background: linear-gradient(to bottom, var(--accent), transparent);
 }
 
 .timeline-item {
@@ -609,7 +609,7 @@ nav.scrolled {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--accent);
   border: 2px solid var(--bg2);
   box-shadow: 0 0 0 3px rgba(201,168,76,0.2);
 }
@@ -632,7 +632,7 @@ nav.scrolled {
 
 .exp-company {
   font-size: 0.9rem;
-  color: var(--gold);
+  color: var(--accent);
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -640,7 +640,7 @@ nav.scrolled {
 .exp-period {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: var(--gold);
+  color: var(--accent);
   background: rgba(201,168,76,0.08);
   border: 1px solid rgba(201,168,76,0.2);
   padding: 0.25rem 0.7rem;
@@ -669,7 +669,7 @@ nav.scrolled {
   content: '▸';
   position: absolute;
   left: 0;
-  color: var(--gold);
+  color: var(--accent);
   font-size: 0.7rem;
   top: 0.1rem;
 }
@@ -691,7 +691,7 @@ nav.scrolled {
   font-size: 0.68rem;
   background: rgba(201,168,76,0.06);
   border: 1px solid rgba(201,168,76,0.15);
-  color: var(--gold);
+  color: var(--accent);
   padding: 0.2rem 0.55rem;
   border-radius: 5px;
 }
@@ -725,7 +725,7 @@ nav.scrolled {
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--gold), transparent);
+  background: linear-gradient(90deg, var(--accent), transparent);
   opacity: 0;
   transition: opacity var(--transition);
 }
@@ -771,7 +771,7 @@ nav.scrolled {
 .project-impact-label {
   font-family: var(--font-mono);
   font-size: 0.65rem;
-  color: var(--gold);
+  color: var(--accent);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 0.3rem;
@@ -805,7 +805,7 @@ nav.scrolled {
 .cert-card {
   background: var(--bg3);
   border: 1px solid var(--border);
-  border-left: 2px solid var(--gold);
+  border-left: 2px solid var(--accent);
   border-radius: var(--radius);
   padding: 1.4rem;
   display: flex;
@@ -823,7 +823,7 @@ nav.scrolled {
 .cert-issuer {
   font-family: var(--font-mono);
   font-size: 0.68rem;
-  color: var(--gold);
+  color: var(--accent);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -883,7 +883,7 @@ nav.scrolled {
 }
 
 .contact-link:hover {
-  color: var(--gold);
+  color: var(--accent);
   border-color: rgba(201,168,76,0.35);
   opacity: 1;
   transform: translateY(-2px);
@@ -1048,7 +1048,7 @@ footer {
   .certs-grid { grid-template-columns: 1fr; }
 }
 .hero-name-line.accent {
-  color: var(--gold);
+  color: var(--accent);
   -webkit-text-stroke: 0 !important;
   text-shadow: 0 0 20px rgba(201,168,76,0.3);
 }
