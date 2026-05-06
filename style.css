@@ -223,7 +223,7 @@ nav.scrolled {
    HERO
    ============================================ */
 #hero {
-  min-height: 100vh;
+  min-height: 88vh;
   display: block;
   padding-top: 5rem;
   padding-bottom: 0;
@@ -1086,4 +1086,53 @@ footer {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* HERO TAGS */
+.hero-tags {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.hero-tags span {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(59,130,246,0.08);
+  border: 1px solid rgba(59,130,246,0.2);
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
+/* HERO STATS */
+.hero-stats {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  padding: 1rem 1.2rem;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  min-width: 140px;
+}
+
+.hero-stat-number {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-head);
+}
+
+.hero-stat-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
